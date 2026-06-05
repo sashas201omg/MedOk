@@ -12,10 +12,28 @@
         <link rel="modulepreload" href="./assets/HoneyJar-BKrIwLag.js"/>
     </head>
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>    
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #C8820A;
+}
+
+.btn-honey {
+    transition: all 0.3s ease;
+}
+
+.btn-honey:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+    cursor: pointer;
+}
+</style>    
     <body class="honeycomb-bg grain-overlay">
        <header style="background: rgba(253, 246, 227, 0.92); border-bottom: 1px solid rgba(200, 130, 10, 0.2); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 50;">
            <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px;">
@@ -24,7 +42,7 @@
                    <span style="font-family:'Playfair Display', Georgia, serif;font-size:24px;font-weight:700;color:#2D1508;letter-spacing:-0.5px">МедОк</span>
                     </a>
                 <nav style="display:flex;gap:15px;align-items:center">
-                   <a class="nav-link active" href="./" style="font-family:'Lora', serif;font-size:15px;color:#5C3010;text-decoration:none" data-status="active" aria-current="page">Каталог</a>
+                   <a class="nav-link" href="#catalog" style="font-family:'Lora', serif;font-size:15px;color:#5C3010;text-decoration:none" data-status="active" aria-current="page">Каталог</a>
                    <a href="./#about" class="nav-link" style="font-family:'Lora', serif;font-size:15px;color:#5C3010;text-decoration:none">Про нас</a>
                    <a href="./#contact" class="nav-link" style="font-family:'Lora', serif;font-size:15px;color:#5C3010;text-decoration:none">Контакти</a>
                    <a href="./#contact" style="font-family:'Playfair Display', serif;font-size:14px;color:#FDF6E3;background:#2D1508;padding:8px 20px;text-decoration:none;letter-spacing:0.04em;transition:background 0.2s">Замовити</a>
@@ -319,12 +337,12 @@
                                         <!-- -->
                                         ₽</span>
                                     </div>
-                                    <button disabled="" class="btn-honey px-7 py-3 rounded-none text-sm tracking-widest  ">Купить</button>
+                                    <button class="btn-honey px-7 py-3 rounded-none text-sm tracking-widest">Купить</button>
                                 </div>
                             </div>
                         </div>
                         <div class="product-card fade-up delay-2" style="background:rgba(253,246,227,0.8);border:1px solid rgba(200,130,10,0.15);overflow:hidden;box-shadow:0 4px 32px rgba(45,21,8,0.06);display:flex;flex-direction:column">
-                            <a href="./products/2" style="display:block;text-decoration:none">
+                            <<a href="#catalog style="display:block;text-decoration:none">
                                 <div style="background:radial-gradient(ellipse at center, rgba(222,176,48,0.08) 0%, transparent 75%), linear-gradient(180deg, #F5E9C8 0%, #EDD89A 100%);display:flex;justify-content:center;align-items:center;padding:40px 20px;min-height:260px;position:relative">
                                     <svg viewBox="0 0 200 270" width="180" height="243.00000000000003" class="" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                         <defs>
